@@ -5,9 +5,9 @@ const mysql = require("mysql2/promise");
 
 // MySQL 연결 설정
 const pool = mysql.createPool({
-  host: "localhost",
-  user: "root",
-  password: "0000",
+  host: "formysql.c9002w2gef43.ap-northeast-2.rds.amazonaws.com",
+  user: "admin",
+  password: "Passw0rd123!!",
   database: "nodejs",
   waitForConnections: true,
   connectionLimit: 10,
@@ -154,6 +154,6 @@ http
       res.end(err.message);
     }
   })
-  .listen(8082, () => {
+  .listen(8080, () => {
     console.log("8082번 포트에서 서버 대기 중입니다");
   });

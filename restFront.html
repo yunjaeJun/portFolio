@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8" />
-  <title>RESTful SERVER</title>
-  <link rel="stylesheet" href="./restFront.css" />
-</head>
-<body>
-<nav>
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-</nav>
-<div>
-  <form id="form">
-    <input type="text" id="username">
-    <button type="submit">등록</button>
-  </form>
-</div>
-<div id="list"></div>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="./restFront.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to Yunjae's site</title>
+    <link rel="stylesheet" href="./restFront.css" />
+  </head>
+  <body>
+    <nav class="home">
+      <a href="./restFront.html">Home</a>
+    </nav>
+    <nav class="portfolio">
+      <a href="./profile.html">Profile</a>
+      <a href="./project.html">Project</a>
+    </nav>
+
+    <div>
+      <div>
+        <br />
+        <h1 class="explain">방명록인데요 흔적 좀 남겨주세요</h1>
+        <form id="form">
+          <input type="text" id="username" />
+          <button type="submit">등록</button>
+        </form>
+      </div>
+      <div id="list"></div>
+    </div>
+    <video
+      id="background-video"
+      class="background-video"
+      src="./bgplay.mp4"
+      muted
+      autoplay
+      playsinline
+      loop
+    ></video>
+    <img id="mute-button" class="mute-button" src="./mute.png" alt="mute" />
+    <img
+      id="unmute-button"
+      class="unmute-button"
+      src="./unmute.png"
+      alt="unmute"
+    />
+    <nav class="contact">
+      <a href="mailto:kevin7609@naver.com">이메일: kevin7609@naver.com</a>
+      <a href="https://github.com/yunjaeJun"
+        >깃허브: https://github.com/yunjaeJun</a
+      >
+      <a href="tel:01071847619">전화번호: 010-7184-7619</a>
+      <a href="https://www.instagram.com/yun.nwo02/"
+        >인스타: https://www.instagram.com/yun.nwo02/</a
+      >
+      <a href="https://open.kakao.com/o/sgYt3aph">오픈카톡</a>
+    </nav>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./restFront.js"></script>
+    <script src="./background.js"></script>
+  </body>
 </html>

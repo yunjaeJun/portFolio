@@ -1,13 +1,38 @@
-a {
-    text-decoration: none;
-    color: pink;
-}
-
-nav {
-    background-color: blue;
+nav.home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
     padding: 10px;
     border-radius: 5px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.portfolio {
+    position: fixed;
+    top: 0;
+    right: 10px;
+    width: 8%;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.contact {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 div {
@@ -16,4 +41,42 @@ div {
 
 form {
     padding: 10px;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background-video {
+    position: absolute;
+    top: -1200px;
+    left: 0;
+    width: 100%;
+    height: 600%;
+    object-fit: cover;
+    z-index: -1;
+    clip-path: inset(25% 0 0 0);
+    /* 위에서 20% 잘라내기 */
+}
+
+.mute-button,
+.unmute-button {
+    position: fixed;
+    top: 70px;
+    right: 30px;
+    width: 90px;
+    /* 아이콘 크기 설정 */
+    height: 90px;
+    /* 아이콘 크기 설정 */
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+.unmute-button {
+    display: none;
+    /* 처음에는 숨김 */
 }
